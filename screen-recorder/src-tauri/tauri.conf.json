@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "screen-recorder",
+  "version": "0.1.0",
+  "identifier": "com.example.screenrecorder",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "screen-recorder",
+        "width": 500,
+        "height": 300
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}
